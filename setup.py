@@ -28,5 +28,14 @@ setuptools.setup(
             "pycocoevalcap",
             "apache-beam[gcp]",
         ],
+        ### jax[tpu] version is not working on colab
+        "colab": [
+            "pytest",
+            "gin-config",
+            "t5x @ git+https://github.com/google-research/t5x",
+            "flaxformer @ git+https://github.com/google/flaxformer",
+            "pycocoevalcap",
+            "apache-beam[gcp]",
+        ],
     },
 )
